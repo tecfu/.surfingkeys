@@ -1,0 +1,102 @@
+// an example to create a new mapping `ctrl-y`
+api.mapkey('Y', 'Show me the money', function() {
+    // Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
+    console.log('hi');
+    // document.querySelector("div.surfingkeys_hints_host").shadowRoot.querySelectorAll("section > div").forEach(el => el.style.fontSize = "14pt")
+});
+
+// tab right
+api.map('K', 'R');
+
+// tab left
+api.map('J', 'E');
+
+// go back in history
+api.map('H', 'S');
+
+// go forward in history
+api.map('L', 'D');
+
+// simplify search
+api.map('o', 'og');
+
+// scroll speed
+settings.scrollStepSize = 200;
+
+solarizedDark = `
+.sk_theme {
+	background: #100a14dd;
+	color: #4f97d7;
+}
+.sk_theme tbody {
+	color: #292d;
+}
+.sk_theme input {
+	color: #d9dce0;
+}
+.sk_theme .url {
+	color: #2d9574;
+}
+.sk_theme .annotation {
+	color: #a31db1;
+}
+.sk_theme .omnibar_highlight {
+	color: #333;
+	background: #ffff00aa;
+}
+.sk_theme #sk_omnibarSearchResult ul li:nth-child(odd) {
+	background: #5d4d7a55;
+}
+.sk_theme #sk_omnibarSearchResult ul li.focused {
+	background: #5d4d7aaa;
+}
+.sk_theme #sk_omnibarSearchResult .omnibar_folder {
+	color: #a31db1;
+}
+`;
+
+
+zenbonse = `
+.sk_theme {
+  font-family: SauceCodePro Nerd Font, Consolas, Menlo, monospace;
+  font-size: 10pt;
+  background: #f0edec;
+  color: #2c363c;
+}
+.sk_theme tbody {
+  color: #f0edec;
+}
+.sk_theme input {
+  color: #2c363c;
+}
+.sk_theme .url {
+  color: #1d5573;
+}
+.sk_theme .annotation {
+  color: #2c363c;
+}
+.sk_theme .omnibar_highlight {
+  color: #88507d;
+}
+.sk_theme #sk_omnibarSearchResult ul li:nth-child(odd) {
+  background: #f0edec;
+}
+.sk_theme #sk_omnibarSearchResult ul li.focused {
+  background: #cbd9e3;
+}
+#sk_status,
+#sk_find {
+  font-size: 10pt;
+}
+`;
+
+
+settings.theme = `
+  @media (prefers-color-scheme: dark) {
+  ${solarizedDark}
+}
+  @media (prefers-color-scheme: light) {
+  ${zenbonse}
+}
+}
+`
