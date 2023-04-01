@@ -2,7 +2,7 @@
 
 ## Motivation
 
-Configuration docs for the chrome extension (Surfingkeys](https://github.com/brookhong/Surfingkeys).
+Configuration docs for the chrome extension [Surfingkeys](https://github.com/brookhong/Surfingkeys).
 
 I am using the [#enable-force-dark](https://superuser.com/questions/1484146/how-to-enforce-dark-mode-on-chrome-web-store) in chrome. At the time of writing, this is the only way to convert chrome's internal pages (i.e. webstore, settings) to be in dark mode. The #enable-force-dark flag doesn't play nicely with the hint boxes in SurfingKeys, so I had to [fork the plugin](https://github.com/tecfu/Surfingkeys/tree/hack_hint_sizes) and modify it.
 
