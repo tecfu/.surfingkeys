@@ -20,6 +20,15 @@ api.map('L', 'D');
 // simplify search
 api.map('o', 'og');
 
+// unmap space
+api.unmap('<Space>');
+
+// fist tab
+api.map('<Space>a', 'g0');
+
+// last tab
+api.map('<Space>;', 'g$');
+
 // scroll speed
 settings.scrollStepSize = 200;
 
