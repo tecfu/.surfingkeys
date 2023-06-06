@@ -24,6 +24,8 @@ api.map('o', 'og');
 settings.scrollStepSize = 200;
 
 // @todo Make these configurable
+// see also: src/content_scripts/common/hints.js
+// https://github.com/tecfu/Surfingkeys/commit/0a0c2ca19789be350f0ecac739f6fae6c9a289ed
 // settings.hintBackground = "red";
 // settings.hintColor = "white"
 // settings.hintFontSize = "14pt";
