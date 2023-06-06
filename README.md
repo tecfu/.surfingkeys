@@ -13,7 +13,6 @@ This README provides guidance on how to install the fork and accompanying config
 ```
 git clone https://github.com/tecfu/Surfingkeys
 cd Surfingkeys
-git checkout hack_hint_sizes
 npm install
 npm run build:prod
 ```
