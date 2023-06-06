@@ -1,18 +1,25 @@
 # SurfingKeys Configuration
 
+- Contents
+  - Configuration Files
+  - Instructions for Installation of [Hacked Plugin](https://github.com/tecfu/Surfingkeys) (Changed hardcoded coloring for hints)
+
 ## Motivation
 
-Configuration docs for the chrome extension [Surfingkeys](https://github.com/brookhong/Surfingkeys).
+SurfingKeys doesn't expose configuration to change the hint color. This hacked plugin changes [the hardcoded hint styling](https://github.com/tecfu/Surfingkeys/commit/0a0c2ca19789be350f0ecac739f6fae6c9a289ed).
 
-I am using the [#enable-force-dark](https://superuser.com/questions/1484146/how-to-enforce-dark-mode-on-chrome-web-store) in chrome. At the time of writing, this is the only way to convert chrome's internal pages (i.e. webstore, settings) to be in dark mode. The #enable-force-dark flag doesn't play nicely with the hint boxes in SurfingKeys, so I had to [fork the plugin](https://github.com/tecfu/Surfingkeys/tree/hack_hint_sizes) and modify it.
+### Background
+I am using the [#enable-force-dark](https://superuser.com/questions/1484146/how-to-enforce-dark-mode-on-chrome-web-store) in chrome.
+At the time of writing, this is the only way to convert chrome's internal pages (i.e. webstore, settings) to be in dark mode.
 
 This README provides guidance on how to install the fork and accompanying configuration.
 
-## Surfingkeys Installation 
+## Hacked Plugin Installation (SurfingKeys) (separate repo)
 
 ```
 git clone https://github.com/tecfu/Surfingkeys
 cd Surfingkeys
+git checkout feature/hack-hint-size
 npm install
 npm run build:prod
 ```

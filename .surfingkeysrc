@@ -23,9 +23,10 @@ api.map('o', 'og');
 // scroll speed
 settings.scrollStepSize = 200;
 
-settings.hintBackground = "red";
-settings.hintColor = "white"
-settings.hintFontSize = "14pt";
+// @todo Make these configurable
+// settings.hintBackground = "red";
+// settings.hintColor = "white"
+// settings.hintFontSize = "14pt";
 
 solarizedDark = `
 .sk_theme {
