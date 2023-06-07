@@ -6,7 +6,11 @@
 
 ## Motivation
 
-SurfingKeys doesn't expose configuration to change the hint color. This hacked plugin changes [the hardcoded hint styling](https://github.com/tecfu/Surfingkeys/commit/0a0c2ca19789be350f0ecac739f6fae6c9a289ed).
+SurfingKeys doesn't expose configuration to change the hint color. 
+
+Guidance from the [README](https://github.com/brookhong/Surfingkeys/blob/master/docs/API.md#hintsstyle) simply doesn't work.
+
+This hacked plugin changes [the hardcoded hint styling](https://github.com/tecfu/Surfingkeys/commit/0a0c2ca19789be350f0ecac739f6fae6c9a289ed).
 
 ### Background
 
