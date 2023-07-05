@@ -1,9 +1,38 @@
-// an example to create a new mapping `ctrl-y`
-api.mapkey('Y', 'Show me the money', function() {
-    // Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
-    console.log('hi');
-    // document.querySelector("div.surfingkeys_hints_host").shadowRoot.querySelectorAll("section > div").forEach(el => el.style.fontSize = "14pt")
-});
+const {
+    aceVimMap,
+    mapkey,
+    imap,
+    imapkey,
+    getClickableElements,
+    vmapkey,
+    map,
+    unmap,
+    cmap,
+    addSearchAlias,
+    removeSearchAlias,
+    tabOpenLink,
+    readText,
+    Clipboard,
+    Front,
+    Hints,
+    Visual,
+    RUNTIME
+} = api;
+
+
+// unmap space
+api.unmap('<Space>');
+
+// api.mapkey('<Space>;', 'Show me the money', function() {
+//     // Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
+// });
+
+const hintsCss = "font: 16px 'MesloLGS NF', sans, monospace; border: solid 1px #8c7001; color:#FFF; padding: 1px 3px; background: initial; background-color: #FF0000;";
+
+Hints.style(hintsCss);
+Hints.style(hintsCss, 'text');
+Visual.style('marks', 'background-color: #52C19699;');
+Visual.style('cursor', 'background-color: #81A2BE;');
 
 // tab right
 api.map('K', 'R');
@@ -12,23 +41,41 @@ api.map('K', 'R');
 api.map('J', 'E');
 
 // go back in history
+api.unmap('H');
 api.map('H', 'S');
 
 // go forward in history
+api.unmap('L');
 api.map('L', 'D');
 
 // simplify search
 api.map('o', 'og');
 
-// scroll speed
-settings.scrollStepSize = 200;
+// fist tab
+api.map('<Space>a', 'g0');
 
-// @todo Make these configurable
-// see also: src/content_scripts/common/hints.js
-// https://github.com/tecfu/Surfingkeys/commit/0a0c2ca19789be350f0ecac739f6fae6c9a289ed
-// settings.hintBackground = "red";
-// settings.hintColor = "white"
-// settings.hintFontSize = "14pt";
+// last tab
+api.map('<Space>;', 'g$');
+
+// should work but doesn't
+//aceVimMap('<Space>a', '^', 'normal');
+//aceVimMap('<Space>;', '$', 'normal');
+
+//onAceVimKeymapInit(function(dk) {
+//  dk.unshift(
+//   {
+//      keys: '<Space>a',
+//      type: 'motion',
+//      motion: 'moveToEol',
+//      motionArgs: {},
+//      context: 'normal'
+//   }
+//  );
+//});
+
+
+// scroll speed
+settings.scrollStepSize = 500;
 
 solarizedDark = `
 .sk_theme {
