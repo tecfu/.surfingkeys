@@ -37,4 +37,4 @@ npm run build:prod
 ## SurfingKeys Configuration
 
 - Extension > SurfingKeys > Details > Extension Options
-- Enter contents of .surfingkeysrc or https://gist.githubusercontent.com/tecfu/87e5ce07e5c54cfbeed2198fe4f235af/raw/35ae65bec9eabb0c6bcc4f67b563904f75ea3207/.surfingkeysrc
+- Enter contents of .surfingkeysrc or https://gist.githubusercontent.com/tecfu/87e5ce07e5c54cfbeed2198fe4f235af/raw/e7d7d8d02e7b43e4250888a1b7ffd3ba5b7cf155/.surfingkeysrc
